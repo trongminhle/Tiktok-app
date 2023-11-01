@@ -42,7 +42,7 @@ const MENU_ITEMS = [
         {
           type: faLanguage,
           code: "vn",
-          title: "VietName",
+          title: "Tiếng Việt",
         },
       ],
     },
@@ -132,12 +132,7 @@ function Header() {
           )}
           <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
             {currentUser ? (
-              <Image
-                src
-                alt="nguyen van a"
-                className={cx("user-avatar")}
-                fallback="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/5d08a71b72af01e632862706c5a579a0~c5_100x100.jpeg?x-expires=1696579200&x-signature=ki19%2BRaTv0wW7Tp80t%2Fn05wMZgs%3D"
-              />
+              <Image src="" alt="nguyen van a" className={cx("user-avatar")} fallback="" />
             ) : (
               <button className={cx("more-btn")}>
                 <FontAwesomeIcon icon={faEllipsisVertical} />

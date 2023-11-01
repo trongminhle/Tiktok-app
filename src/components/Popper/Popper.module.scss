@@ -1,9 +1,12 @@
 .wrapper {
-    padding-top: 8px;
-    width: 100%;
-    background: #fff;
-    box-shadow: rgb(0, 0, 0, 12%) 0px 2px 12px;
-    border-radius: 8px;
-    max-height: min((1000vh - 96px) - 60px, 734px);
-    min-height: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  width: 100%;
+  background: #fff;
+  box-shadow: rgb(0, 0, 0, 12%) 0px 2px 12px;
+  border-radius: 8px;
+  max-height: min((1000vh - 96px) - 60px, 734px);
+  min-height: 100px;
 }
