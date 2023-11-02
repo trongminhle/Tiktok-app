@@ -13,7 +13,6 @@ const defaultFn = () => {};
 function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn }) {
   const [history, setHistory] = useState([{ data: items }]);
   const current = history[history.length - 1];
-
   const renderItems = () => {
     return current.data.map((item, index) => {
       const isParent = !!item.children;
@@ -40,7 +39,7 @@ function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn 
           <PopperWrapper className={cx("menu-popper")}>
             {history.length > 1 && (
               <Header
-                title="Language"
+                title={current.title}
                 onBack={() => {
                   setHistory((prev) => prev.slice(0, prev.length - 1));
                 }}
